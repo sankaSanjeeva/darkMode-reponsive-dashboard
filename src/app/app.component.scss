@@ -1,0 +1,20 @@
+@import '../assets/variable.scss';
+
+main {
+    background-color: $bg-primary;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+     main {
+        margin-left: 5rem;
+        padding: 1rem;
+    }
+}

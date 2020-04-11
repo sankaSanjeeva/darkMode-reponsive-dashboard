@@ -27,6 +27,10 @@
     margin-top: auto;
 }
 
+.nav-item a.active {
+    background: $bg-secondary;
+}
+
 .nav-link {
     display: flex;
     align-items: center;
@@ -46,12 +50,14 @@
 .link-text {
     display: none;
     margin-left: 1rem;
+    transition: $transition-speed;
 }
 
 .nav-link svg {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
+    transition: $transition-speed;
 }
 
 .fa-primary {
@@ -131,11 +137,22 @@
         display: inline;
     }
 
+    .nav-item:hover .link-text{
+        margin-left: 0.8rem;
+        font-size: 120%;
+    }
+
     .navbar:hover .logo svg {
         margin-left: 13.5rem;
     }
 
     .navbar:hover .logo-text {
         left: 0px;
+    }
+
+    .nav-link:hover svg {
+        width: 2.3rem;
+        min-width: 2.3rem;
+        margin: 0 1.35rem;
     }
 }
