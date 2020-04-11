@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../src/assets/variable.scss';
+
+::-webkit-scrollbar {
+    width: $scroll-size;
+    height: $scroll-size;
+}
+
+::-webkit-scrollbar-track {
+    background: $scroll-track;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scroll-thumb;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $scroll-thumb-hover;
+}
+
+::selection {
+    background-color: $selection;
+}
+
+body {
+    background-color: $bg-primary;
+    margin: 0;
+    padding: 0;
+}
