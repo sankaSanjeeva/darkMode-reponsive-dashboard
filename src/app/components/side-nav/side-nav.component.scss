@@ -2,7 +2,7 @@
 
 .navbar {
     position: fixed;
-    background-color: $bg-primary;
+    background-color: var(--bg-primary);
     transition: width $transition-speed ease;
     overflow-y: auto;
     overflow-x: hidden;
@@ -28,29 +28,28 @@
 }
 
 .nav-item a.active {
-    background: $bg-secondary;
+    background: var(--bg-secondary);
 }
 
 .nav-link {
     display: flex;
     align-items: center;
     height: 5rem;
-    color: $text-primary;
+    color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
-    transition: $transition-speed;
+    transition: $color-t-speed;
 }
 
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
-    background: $bg-secondary;
-    color: $text-secondary;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
 }
 
 .link-text {
     display: none;
     margin-left: 1rem;
-    transition: $transition-speed;
 }
 
 .nav-link svg {
@@ -61,11 +60,11 @@
 }
 
 .fa-primary {
-    color: #ff7eee;
+    color: $fa-primary
 }
 
 .fa-secondary {
-    color: #df49a6;
+    color: $fa-secondary
 }
 
 .fa-primary, .fa-secondary {
@@ -77,10 +76,10 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: center;
-    color: $text-primary;
-    background: $bg-secondary;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
     font-size: 1.5rem;
-    letter-spacing: 0.2ch;
+    letter-spacing: 0.3ch;
     width: 100%;
 }
 
@@ -138,12 +137,12 @@
     }
 
     .nav-item:hover .link-text{
-        margin-left: 0.8rem;
-        font-size: 120%;
+        margin-left: 0.9rem;
+        font-size: 105%;
     }
 
     .navbar:hover .logo svg {
-        margin-left: 13.5rem;
+        margin-left: 13rem;
     }
 
     .navbar:hover .logo-text {
@@ -155,4 +154,16 @@
         min-width: 2.3rem;
         margin: 0 1.35rem;
     }
+}
+
+.theme-icon {
+    display: none;
+}
+  
+.dark-mode #darkIcon {
+    display: block;
+}
+
+.light-mode #lightIcon {
+    display: block;
 }

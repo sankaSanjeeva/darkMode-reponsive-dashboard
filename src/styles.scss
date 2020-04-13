@@ -1,13 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../src/assets/variable.scss';
 
+@font-face {
+    font-family: BalooPaaji-2;
+    src: url(assets/fonts/BalooPaaji2.ttf) format("opentype");
+}
+
+:root {
+    font-family: 'BalooPaaji-2', cursive;
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --selection: var(--selection-light);
+}
+
+.light {
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --selection: var(--selection-light);
+}
+
+.dark {
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --selection: var(--selection-dark);
+}
+
 ::-webkit-scrollbar {
     width: $scroll-size;
     height: $scroll-size;
-}
-
-::-webkit-scrollbar-track {
-    background: $scroll-track;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -19,11 +45,16 @@
 }
 
 ::selection {
-    background-color: $selection;
+    background-color: var(--selection);
 }
 
 body {
-    background-color: $bg-primary;
+    background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
+    transition: background-color $color-t-speed ease;
+}
+
+p {
+    color: var(--text-primary);
 }

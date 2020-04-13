@@ -1,13 +1,25 @@
-$selection: #e62cae;
-$scroll-track: #ffffff;
 $scroll-thumb: #b6a1f1;
 $scroll-thumb-hover: #6649b8;;
 $scroll-size: 0.25rem;
 
-$bg-primary: #ffffff;
-$bg-secondary: #e4e4e4;
+$transition-speed: 600ms;
+$color-t-speed: 1000ms;
 
-$text-primary: #1f1f1f;
-$text-secondary: #000000;
+$fa-primary: #ff7eee;
+$fa-secondary: #df49a6;
 
-$transition-speed: 600ms
+:root {
+    // in dark mode
+    --bg-primary-dark: #23232e;
+    --bg-secondary-dark: #141418;
+    --text-primary-dark: #b6b6b6;
+    --text-secondary-dark: #ececec;
+    --selection-dark: #ca5ca9;
+
+    // in light mode
+    --bg-primary-light: #ffffff;
+    --bg-secondary-light: #e4e4e4;
+    --text-primary-light: #1f1f1f;
+    --text-secondary-light: #000000;
+    --selection-light: #662452;
+}
