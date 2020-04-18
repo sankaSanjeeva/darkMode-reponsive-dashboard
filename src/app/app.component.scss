@@ -6,10 +6,20 @@ main {
     transition: background-color $color-t-speed ease;
 }
 
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
 /* Small screens */
 @media only screen and (max-width: 600px) {
     main {
-        margin: 1rem;
+        margin: 1rem 1rem 5rem 1rem;
+    }
+
+    .loader {
+        margin: -72px 0px 0px -32px;
     }
 }
 
@@ -18,5 +28,9 @@ main {
      main {
         margin-left: 5rem;
         padding: 1rem;
+    }
+
+    .loader {
+        margin: -32px 0px 0px -32px;
     }
 }
