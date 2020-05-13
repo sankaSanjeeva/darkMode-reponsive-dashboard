@@ -6,7 +6,7 @@
     transition: width $transition-speed ease, background-color $color-t-speed ease;
     overflow-y: auto;
     overflow-x: hidden;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-nav {
@@ -25,10 +25,12 @@
 
 .nav-item:last-child {
     margin-top: auto;
+    cursor: pointer;
 }
 
 .nav-item a.active {
     background: var(--bg-secondary);
+    filter: grayscale(0%) opacity(1);
 }
 
 .nav-link {

@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Mesons",
+        "path": "assets/svg/home/meson.svg"
+    },
+    {
+        "title": "Carpenters",
+        "path": "assets/svg/home/carpenter.svg"
+    },
+    {
+        "title": "Painters",
+        "path": "assets/svg/home/painter.svg"
+    },
+    {
+        "title": "Plumbers",
+        "path": "assets/svg/home/plumber.svg"
+    },
+    {
+        "title": "Electricians",
+        "path": "assets/svg/home/electricians.svg"
+    },
+    {
+        "title": "Tile",
+        "path": "assets/svg/home/tiles.svg"
+    },
+    {
+        "title": "Landscaping",
+        "path": "assets/svg/home/landscaping.svg"
+    },
+    {
+        "title": "Ceiling",
+        "path": "assets/svg/home/ceiling.svg"
+    },
+    {
+        "title": "Aluminium",
+        "path": "assets/svg/home/aluminium.svg"
+    },
+    {
+        "title": "Welding",
+        "path": "assets/svg/home/welding.svg"
+    },
+    {
+        "title": "A/C",
+        "path": "assets/svg/home/ac.svg"
+    },
+    {
+        "title": "Well",
+        "path": "assets/svg/home/wells.svg"
+    },
+    {
+        "title": "Cleaners",
+        "path": "assets/svg/home/cleaners.svg"
+    },
+    {
+        "title": "Curtains",
+        "path": "assets/svg/home/curtains.svg"
+    },
+    {
+        "title": "Stones & Sand suppliers",
+        "path": "assets/svg/home/sand.svg"
+    },
+    {
+        "title": "CCTV",
+        "path": "assets/svg/home/cctv.svg"
+    },
+    {
+        "title": "Rent Tools",
+        "path": "assets/svg/home/tools.svg"
+    }
+]

@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div>
+  <ul class="item-list">
+    <li *ngFor="let item of items">
+      <div class="item-box">
+        <div class="item-content">
+          <img src="{{ item.path }}" alt="painter-svg" class="item-icon" />
+          <div class="item-text">{{ item.title }}</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
