@@ -13,6 +13,7 @@
     --text-primary: var(--text-primary-light);
     --text-secondary: var(--text-secondary-light);
     --selection: var(--selection-light);
+    --gradient: var(--gradient-dark);
 }
 
 .light {
@@ -21,6 +22,7 @@
     --text-primary: var(--text-primary-light);
     --text-secondary: var(--text-secondary-light);
     --selection: var(--selection-light);
+    --gradient: var(--gradient-light);
 }
 
 .dark {
@@ -29,6 +31,7 @@
     --text-primary: var(--text-primary-dark);
     --text-secondary: var(--text-secondary-dark);
     --selection: var(--selection-dark);
+    --gradient: var(--gradient-dark);
 }
 
 ::-webkit-scrollbar {

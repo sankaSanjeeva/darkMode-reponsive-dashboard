@@ -15,7 +15,7 @@ main {
 /* Small screens */
 @media only screen and (max-width: 600px) {
     main {
-        margin: 1rem 1rem 5rem 1rem;
+        margin: 0rem 0rem 5rem 0rem;
     }
 
     .loader {
@@ -27,7 +27,7 @@ main {
 @media only screen and (min-width: 600px) {
      main {
         margin-left: 5rem;
-        padding: 1rem;
+        padding: 0rem;
     }
 
     .loader {

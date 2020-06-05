@@ -17,6 +17,7 @@ $fa-secondary: #8A2BE2;
     --text-primary-dark: #b6b6b6;
     --text-secondary-dark: #ececec;
     --selection-dark: #ca5ca9;
+    --gradient-dark: 0, 0, 0;
 
     // in light mode
     --bg-primary-light: #ffffff;
@@ -24,4 +25,5 @@ $fa-secondary: #8A2BE2;
     --text-primary-light: #1f1f1f;
     --text-secondary-light: #000000;
     --selection-light: #662452;
+    --gradient-light: 250, 250, 250;
 }

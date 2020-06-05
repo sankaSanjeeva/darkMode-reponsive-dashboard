@@ -1,1 +1,40 @@
-<p>register works!</p>
+<div class="content">
+    <div class="form-content">
+        <form [formGroup]="regForm">
+            <div class="form-field">
+                <input class="input-field" formControlName="email" placeholder="Email" name="email" id="email">
+                <label for="email" class="input-label">Email</label>
+                <span *ngIf="email.invalid && email.touched">
+                    Your email does not look right
+                </span>
+            </div>
+            <div class="form-field">
+                <input class="input-field" formControlName="password" type="password" placeholder="Password" name="password" id="password">
+                <label for="password" class="input-label">Password</label>
+                <span *ngIf="password.invalid && password.touched">
+                    That password sucks...
+                </span>
+            </div>
+            <div class="form-field">
+                <input class="input-field" formControlName="age" type="number" placeholder="Age" name="age" id="age">
+                <label for="age" class="input-label">Age</label>
+                <span *ngIf="age.errors?.min && age.touched">
+                    {{ age.errors.min.actual }} is young to use this app kiddo!
+                </span>
+                <span *ngIf="age.errors?.max && age.touched">
+                    {{ age.errors.max.actual }} is too you old to use this app gramps!
+                </span>
+            </div>
+
+            <div class="form-field">
+                <input type="text" class="input-field" placeholder="Name" name="name"/>
+                <label for="name" class="input-label">Name</label>
+            </div>
+
+            <div class="">
+                <button [disabled]="regForm.invalid">Let's Do it!</button>
+            </div>
+
+        </form>
+    </div>
+</div>

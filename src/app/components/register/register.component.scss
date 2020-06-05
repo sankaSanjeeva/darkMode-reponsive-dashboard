@@ -1,0 +1,118 @@
+@import '../../../assets/variable.scss';
+
+@-webkit-keyframes autofill {
+    0%,100% {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+	// -webkit-text-fill-color: var(--text-secondary) !important;
+}
+
+.content {
+    width: 100%;
+    background-image: url(../../../assets/images/background/register-page.jpg);
+}
+
+.form-content {
+    height: 100vh;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .content {
+        height: calc(100vh - 5rem);
+        background-size: auto 100hv;
+	}
+	
+	form{
+		// padding: 50px 20px 0 0;
+		margin: auto;
+	}
+
+    .form-content {
+        height: calc(100vh - 5rem);
+        background: linear-gradient(90deg, rgba(var(--gradient),0.5) 50%, rgba(var(--gradient),1) 100%);
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .content {
+        height: 100vh;
+        background-size: auto 100vh;
+	}
+	
+	form{
+		padding: 50px 50px 0 0;
+	}
+
+    .form-content {
+        height: 100vh;
+        background: linear-gradient(90deg, rgba(var(--gradient),0) 0%, rgba(var(--gradient),0.75) 50%, rgba(var(--gradient),1) 100%);
+    }
+}
+
+.form-field {
+	position: relative;
+	padding: 15px 0 0;
+	width: 300px;
+	float: right;
+	clear: right;
+	height: 60px;
+}
+
+.input-field {
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid #9b9b9b;
+	outline: 0;
+	font-size: 1rem;
+	color: var(--text-secondary);
+	padding: 10px 0;
+	background: transparent;
+	/* transition: border-color 0.2s; */
+}
+
+.input-field::placeholder {
+	color: transparent;
+}
+
+.input-field:placeholder-shown~.input-label {
+	font-size: 1.3rem;
+	cursor: text;
+	top: 20px;
+}
+
+.input-label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: var(--text-primary);
+}
+
+.input-field:focus {
+	padding-bottom: 9px;
+	/* font-weight: 700; */
+	color: var(--text-primary);
+	border-width: 3px;
+	border-image: linear-gradient(to right, #11998e, #38ef7d);
+	border-image-slice: 1;
+}
+
+.input-field:focus ~.input-label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #11998e;
+	font-weight: 700;
+}

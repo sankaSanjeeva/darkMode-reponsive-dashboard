@@ -19,14 +19,14 @@ li {
     height: 100px;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
     transition: 500ms;
 }
 
 .item-content:hover {
     width: 104px;
     height: 104px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 
     .item-icon {
         width: 52px;
